@@ -22,22 +22,386 @@ body {
 
 .titulek {
     font-family: 'Raleway', serif;
+    margin:0;
+    
+}
+
+.perex{
+    
+    margin: auto;
+}
+h1{
+    font-size: 400%;
+    padding-top: 20px;
+}
+
+.hlavicka{
+    background-image: url(images/island-hlavicka.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-image: center center;
+    background-position: center;
+}
+
+@media (min-width:500px) and (max-width:1000px)
+{
+.hlavicka{
+    height: 400px;
+}
+}
+
+@media (min-width:1000px)
+{
+.hlavicka{
+    height: 420px;
+}
+
+.perex{
+    width: 800px;
+}
+}
+
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+    padding: 20px;
+}
+.autor{
+    color: rgb(207, 202, 202);
+    padding: 10px;
+}
+.autor::before{
+        content: "";
+        display:block;
+        width:80px;
+        height: 2px;
+        background-color:rgb(213, 215, 216);
+        margin:auto;
+        margin-bottom: 20px;
+}
+.body{
+    background-color: grey;
+}
+.blok{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10px;
+}
+@media (min-width: 1000px)
+{.blok{
+    width: 960px;
+    margin: 0px auto;
+    margin-top:-80px;
+    background-color: white;
+}
+.paticka{
+    width: 960px;
+    margin: 0px auto;
+}
+}
+
+/* MENU */
+a{
+text-decoration: none;
+text-transform: uppercase;
+color: grey;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li{
+    border-bottom:solid 0.5px rgba(221, 219, 219, 0.938);
+    padding-bottom: 2px;
+    padding-top: 2px;
+    color: rgb(240, 234, 234);
+}
+.menu{
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    }
+
+.relative {
+        position: relative;
+    }
+
+@media (max-width:500px)
+{
+.relative{
+    position:unset;
+}
+}
+
+@media (min-width: 500px) and (max-width: 999px)
+{.menu {
+    display: flex;
+    flex-wrap:nowrap;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: solid 0.2px rgb(128, 128, 128, 0.582);
+    border-top: solid 0.2px rgba(128, 128, 128, 0.582);
+
+    }
+    .menu li{
+        border-bottom: none;
+        width:100%;
+    }
+    .menu li:not(:last-child) {
+        border-right: solid 0.1px rgba(128, 128, 128, 0.582);
+    }
+    
+}
+    
+
+@media (min-width: 1000px)
+{.menu{
+    position:absolute;
+    text-align: left;
+    margin: 20px;
+    }
+.uvod p{
+    position:relative;
+    margin-left: 300px;
+}
+}
+
+/* OBSAH */
+.uvod p{
+    text-align: left;
+}
+.uvod img {
+    max-width: 100%;
+}
+
+.popisek {
+    padding:0;
+    margin:0 0 20px 0;
+    font-weight: bold;
+    color: grey;
+    text-align: center !important;
+    font-weight: normal;
+    font-size: 80%;
+}
+
+.popisek a{
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+h2{
+    text-indent: 15px;
+    }
+h2::after{
+    content: "";
+    display:block;
+    width:80px;
+    height: 5px;
+    background-color:rgb(26, 177, 247);
+    margin-top:20px;
+}
+.proc p{
+    text-align: left;
+}
+.proc img{
+    max-width: 100%;
+}
+.co p{
+    text-align: left;
+}
+.co img{
+    max-width: 100%;
+}
+
+@media (min-width: 1000px)
+{
+
+    .co h2{
+        padding-left: 160px;
+}
+
+.co p{
+    padding-left:180px;
+}
+
+.uvod .popisek{
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    color: white;
+    text-align: right;}
+.co .proc .uvod a{color:white}
+
+
+.proc p{
+    padding-right: 250px;
+    padding-left: 40px;
+}    
+
+.proc h2{
+    padding-left: 20px;
+}
+
+.proc .popisek{
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    color: white;
+    text-align: right;
+    padding-right: 0;
+}
+.co .proc .uvod a{color:white}
+
+.co .popisek{
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    color: white;
+    text-align: right;}
+.co .proc .uvod a{color:white}
+
+}
+@media (min-width:500px) and (max-width:1000px)
+{  
+    
+
+
+.uvod .popisek{
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    color: white;
+    text-align: right;
+}
+
+.co.proc .uvod a {
+    color:white
+}
+
+.proc .popisek{
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    color: white;
+    text-align: right;}
+.co .proc .uvod a{color:white}
+
+.co .popisek{
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    color: white;
+    text-align: right;}
+.co .proc .uvod a{color:white}
 }
 
 
-/* MENU */
-
-
-
-
-/* OBSAH */
-
-
-
-
 /* FOTOGALERIE */
+
+.galerie img{
+    width:100%;
+}
+@media (min-width: 500px) and (max-width:1000px)
+{.foto
+    {
+        width: 50%;
+        position: relative;
+        overflow: hidden;
+    }
+    .galerie{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .foto img{
+        width: 100%;
+        display: block;
+        transition: transform 0.3s;
+    }
+    
+    .galerie .popisek{
+        position:absolute;
+        top:100%;
+        left:0;
+        background-color: rgba(0,0,0,0.4);
+        width: 100%;
+        color: white;
+        transition: transform 0.3s;
+    }
+    
+    .foto:hover .popisek{
+        transform: translateY(-100%);
+    }
+    
+    .blok{
+        padding-bottom: 0;
+    }
+    }
+
+@media (min-width: 1000px)
+{
+    .galerie{
+        
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .text p{
+        text-align: left;
+        margin:20px 0 0 0;}
+    
+    .foto{
+        position: relative;
+        overflow: hidden;
+        width: calc(100%/3)
+    }
+    
+    .foto img{
+        width: 100%;
+        display: block;
+        transition: transform 0.3s;
+    }
+    
+    .galerie .popisek{
+        position:absolute;
+        top:100%;
+        left:0;
+        background-color: rgba(0,0,0,0.4);
+        width: 100%;
+        color: white;
+        transition: transform 0.3s;
+    }
+    
+    .foto:hover .popisek{
+        transform: translateY(-100%);
+    }
+    
+    .foto:hover img{
+        transform: scale(1.2);
+    }
+
+    .blok{
+        padding-bottom: 0;
+    }
+}
+.galerie p{
+    color:grey;
+}
 
 
 
 
 /* PATICKA */
+
+.paticka p{
+    text-align: left;
+    color: grey;
+    font-size: 80%;
+}
+.paticka a{
+    text-transform: capitalize;
+    text-decoration: underline;
+}
